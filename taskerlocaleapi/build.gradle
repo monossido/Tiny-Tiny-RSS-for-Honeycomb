@@ -5,18 +5,18 @@ android {
     buildToolsVersion "20.0.0"
 
     defaultConfig {
-        applicationId "com.twofortyfouram.locale.api"
+//        applicationId "com.twofortyfouram.locale.api"
         minSdkVersion 3
         targetSdkVersion 17
     }
 
     lintOptions {
-         abortOnError false
+        abortOnError false
     }
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
